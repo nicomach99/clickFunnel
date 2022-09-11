@@ -6,13 +6,16 @@ defineProps<{
 
 <template>
     <Transition :duration="1250" name="nested">
-        <div v-if="show" class="outer">
-            <div class="inner">
+        <div v-if="show" class="outer landing">
+            <div class="inner landing">
                     <div class="title">
                         ¡Gracias por su preferencia!
                     </div>
                     <div class="text">
                         Responde las siguientes preguntas para que te podamos brindar la mejor antención...
+                    </div>
+                    <div class="spin">
+                      <a-spin />
                     </div>
             </div>
         </div>
@@ -24,7 +27,11 @@ defineProps<{
     font-family: "Roboto", sans-serif;
     width: 700px;
     height: 300px;
+    /* background-color: rgb(0 0 0 / 65%); */
 }   
+.landing {
+  border-radius: 15px;
+}
 .title {
     font-family: 'Roboto-C';
     text-align: center;
@@ -36,10 +43,17 @@ defineProps<{
     text-align: center;
 
 }
-.inner { 
-  background-color: black;
+.spin {
+  flex: 1;
+    display: block;
+    display: grid;
+    align-items: start;
+    align-content: space-around;
+    padding-top: 56px;   
 }
-  
+.spin :deep(.ant-spin-dot-item) {
+  background-color: #bfbfbf;
+}
 .nested-enter-active, .nested-leave-active {
 	transition: all 0.3s ease-in-out;
 }

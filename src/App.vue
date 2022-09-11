@@ -35,7 +35,8 @@ setTimeout(() => showQuestions.value = true, 6200)
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 1, 1, 0.5);
+  background-color: rgba(0, 1, 1, 0.717);
+  border-radius: 15px;
 }
 .main {
   align-items: center;
