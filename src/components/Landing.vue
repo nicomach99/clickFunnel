@@ -12,7 +12,7 @@ defineProps<{
                         ¡Gracias por su preferencia!
                     </div>
                     <div class="text">
-                        Responde las siguientes preguntas para que te podamos brindar la mejor antención...
+                        Estamos preparando todo para brindarte la mejor antención
                     </div>
                     <div class="spin">
                       <a-spin />
@@ -31,17 +31,20 @@ defineProps<{
 }   
 .landing {
   border-radius: 15px;
+  color: white;
 }
 .title {
-    font-family: 'Roboto-C';
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px !important;
     text-align: center;
     font-size: xx-large;
     padding-top: 60px
 }
 .text {
     margin-top: 50px;
+    font-size: 24px;
     text-align: center;
-
+    font-family: "JetBrains Mono", sans-serif;
 }
 .spin {
   flex: 1;
